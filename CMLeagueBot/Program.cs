@@ -23,6 +23,10 @@ namespace CMLeagueBot
 				await director.LoginAsync();
 
 				Console.ReadKey();
+
+				await director.SendMessage("Ello Ello Ello");
+
+				Console.ReadKey();
 			}
 			catch (Exception ex)
 			{
