@@ -18,6 +18,7 @@ namespace CMLeagueBot
 				DiscordDirector director = DiscordDirector.GetDirector();
 
 				Console.WriteLine("Hit any key to login...");
+				Console.ReadKey();
 
 				await director.LoginAsync();
 
