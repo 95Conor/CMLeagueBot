@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using CMLeagueBot.Director;
+using CMLeagueBot.Core;
 
 namespace CMLeagueBot
 {
@@ -17,14 +17,15 @@ namespace CMLeagueBot
 
 				DiscordDirector director = DiscordDirector.GetDirector();
 
-				Console.WriteLine("Hit any key to login...");
-				Console.ReadKey();
+				Console.WriteLine("Logging in...");
 
 				await director.LoginAsync();
 
-				Console.ReadKey();
+				Console.WriteLine("Initialising command handling...");
 
-				await director.SendMessage("Ello Ello Ello");
+				await director.InitialiseCommandHandling();
+
+				Console.WriteLine("Bot successfully running...");
 
 				Console.ReadKey();
 			}
