@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMLeagueBot.Commands.Modules
+namespace CMLeagueBot.Commands.Modules.Misc
 {
 	public class SpongebobModule : ModuleBase<SocketCommandContext>
 	{
